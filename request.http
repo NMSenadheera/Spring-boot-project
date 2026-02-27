@@ -1,0 +1,17 @@
+### GET request to example server
+GET http://localhost:8080
+
+###
+GET http://localhost:8080/Software-engineers
+
+###
+POST http://localhost:8080/Software-engineers
+Content-Type: application/json
+
+{
+  "name": "Naduni",
+  "techStack": "java, js, springboot"
+}
+
+###
+GET http://localhost:8080/Software-engineers/1
