@@ -14,4 +14,13 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/Software-engineers/1
+GET http://localhost:8080/Software-engineers/3
+
+###
+POST http://localhost:8080/Software-engineers
+Content-Type: application/json
+
+{
+  "name": "Saduni",
+  "techStack": "java,python,JS"
+}

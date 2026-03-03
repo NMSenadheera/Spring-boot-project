@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("Software-engineers")
+@RequestMapping("/Software-engineers")
 public class SoftwareEngineerController {
 
     private final SoftwareEngineerService softwareEngineerService;
@@ -22,7 +22,7 @@ public class SoftwareEngineerController {
         softwareEngineerService.insertSoftwareEngineer(softwareEngineer);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public SoftwareEngineer getEngineersById(@PathVariable Integer id) {
         return softwareEngineerService.getSoftwareEngineerById(id);
     }
